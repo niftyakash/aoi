@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import LoginPage from './pages/loginPage/loginPage';
+import HomePage from './pages/homePage/homePage';
 
 function App() {
   return (
@@ -11,11 +12,11 @@ function App() {
           {/* Login Page*/}
           <Route path='/' element = {<LoginPage />}/>
           {/* Page for taking in details */}
-          <Route path='/home' element= {<></>}/> 
+          <Route path='/home' element= {<HomePage />}/> 
           {/* feasibility page*/}
-          <Route />
+          <Route path='/feasibility' element = {<></>}/>
           {/* kyc page*/}
-          <Route />
+          <Route path='/kyc' element = {<></>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -50,6 +50,11 @@ function LoginPage() {
             <div>
                 <input id='userPass' placeholder='password' onChange={onPasswordChange} value={password}/>
             </div>
+            <div className='link-button'>
+                <button>
+                    forgot password?
+                </button>
+            </div>
             <div>
                 <button onClick={onSubmitClick}>
                     Submit
